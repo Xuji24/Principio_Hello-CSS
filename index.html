@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello, CSS</title>
+    <link rel = "stylesheet" href = "./style.css">
+    <style>
+        .disc{
+            font-weight: 600;
+            font-family: cursive;
+            color: darkblue;
+            padding: 10px;
+            width: 100px;
+            background-color: orchid;
+            
+        }
+        .circle{
+            font-weight: 600;
+            font-family: cursive;
+            color: pink;
+            padding: 11px 5px 0px 8px;
+            width: 3rem;
+            height: 3rem;
+            background-color: purple;
+            border-radius: 100%;
+            margin-top: 10px;
+        }
+
+        .square{
+            font-weight: 600;
+            font-family: cursive;
+            background-color: burlywood;
+            width: 7rem;
+            height: 7rem;
+            margin-top: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+        }
+
+        #lower-roman{
+            list-style-type: lower-roman;
+        }
+        
+        #upper-roman{
+            list-style-type: upper-roman;
+        }
+
+        #lower-alpha{
+            list-style-type: lower-alpha;
+        }
+
+        #upper-alpha{
+            list-style-type: upper-alpha;
+        }
+
+        .orderedListContainer{
+            background-color: brown;
+            color: wheat;
+            padding: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body class = "body">
+    <h1>Hello, CSS</h1>
+    <p>
+        CSS Lets us style HTML elements. There's also <a href = "./dummy.html" class = "link">another page</a> 
+        associated with this example.
+    </p>
+    <h2>List Styles</h2>
+    <p>You can style unordered lists with the following bullets: </p>
+    
+    <ul>
+        <li class = "disc">disc</li>
+        <li class = "circle">circle</li>
+        <li class = "square">square</li>
+    </ul>
+
+    <p>And you can number ordered lists with the following: </p>
+
+    <div class = "orderedListContainer">
+        <ol>
+            <li>decimal</li>
+        </ol>
+
+        <ol id = "lower-roman">
+            <li>lower-roman</li>
+        </ol>
+
+        <ol id = "upper-roman">
+            <li >upper-roman</li>
+        </ol>
+
+        <ol id = "lower-alpha">
+            <li >lower-alpha</li>
+        </ol>
+
+        <ol id = "upper-alpha">
+            <li >upper-alpha</li>
+        </ol>
+
+        <ol>
+            <li>(and many more!)</li>
+        </ol>
+    </div>
+</body>
+</html>
